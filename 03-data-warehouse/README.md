@@ -70,3 +70,5 @@ SELECT DISTINCT(VendorID)
 FROM `dtc-de-course-448810.dtc_de_course_448810_ny_taxi_dataset.yellow_taxi_trips_partitioned`
 WHERE tpep_dropoff_datetime BETWEEN '2024-03-01' AND '2024-03-16';
 ```
+## Question 9
+BigQuery only reads metadata, not the actual data, when performing COUNT(*) without WHERE clause.
